@@ -43,7 +43,23 @@ You can start the FastAPI server by running:
 python main.py
 ```
 
-This will start the API at `http://localhost:8000`.
+This will start the API at `http://localhost:3600`.
+
+### 6. If you use  Docker then use the follwing command to run start the dockurized file.
+
+```bash
+
+docker build -t my-fastapi-app .
+
+```
+
+    then Once the image is built, you can run the container using the following command:
+    make sure port number in .env file and internal port mentioned docker command should be same and I you can access the docurized server running on port 8080 and it will be mapped to internal port 3600
+
+```bash 
+docker run --env-file .env -p 8080:3600 my-fastapi-app
+
+```
 
 
 
