@@ -8,6 +8,6 @@ class Student(BaseModel):
     name: str
     age: int
     address: Address
-
+    
     class Config:
-        orm_mode = True
+        from_attributes = True  

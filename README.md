@@ -33,13 +33,14 @@ Create a `.env` file in the root directory of the project and add your MongoDB U
 
 ```bash
 MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/<database_name>
+PORT=3600
 ```
 
 ### 5. Run the Application
 You can start the FastAPI server by running:
 
 ```bash
-uvicorn main:app --reload
+python main.py
 ```
 
 This will start the API at `http://localhost:8000`.
